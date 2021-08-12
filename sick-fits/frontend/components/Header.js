@@ -1,6 +1,6 @@
-import Link from "next/link";
-import styled from "styled-components";
-import Nav from "./Nav";
+import Link from 'next/link';
+import styled from 'styled-components';
+import Nav from './Nav';
 
 const Logo = styled.h1`
   background: red;
