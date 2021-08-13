@@ -3,6 +3,7 @@ import "dotenv/config"; // is gonna make all our environmental variables aailabl
 import { config, createSchema } from "@keystone-next/keystone/schema";
 import { withItemData, statelessSessions } from '@keystone-next/keystone/session';
 import { User } from './schemas/User';
+import { Product } from './schemas/Product';
 
 const databaseURL =
     process.env.DATABASE_URL || "mongodb://localhost/keystone-sick-fits-tutorial";
@@ -38,6 +39,7 @@ export default withAuth(config({
     },
     lists: createSchema({
         User,
+        Product,
         // TODO: schema items go in here
     }),
     ui: {
