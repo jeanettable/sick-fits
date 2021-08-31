@@ -1,9 +1,7 @@
-export default function IndexPage() {
-  return (
-    <>
-      <p>Hello!</p>
-      <code>code</code>
-      <p>I am the child!</p>
-    </>
-  );
-}
+// this is the "homepage"
+import ProductsPage from './products';
+
+export default ProductsPage;
+
+// one liner would look like:
+// export { default } from './products';
