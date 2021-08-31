@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
   // used for **SEO** (search engine optimization)
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
+    // console.log('sheet>>>', sheet);
     const page = renderPage((App) => (props) =>
       sheet.collectStyles(<App {...props} />)
     );
